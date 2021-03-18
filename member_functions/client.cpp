@@ -55,7 +55,6 @@ public:
   
 private:
   rclcpp::Client<AddTwoInts>::SharedPtr client_;  
-  rclcpp::Service<AddTwoInts>::SharedPtr service_;
 };
 
 int main(int argc, char * argv[])
