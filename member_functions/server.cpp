@@ -18,7 +18,7 @@ class MinimalServer : public rclcpp::Node
 {
 public:
   MinimalServer()
-  : Node("minimal_subscriber")
+  : Node("minimal_server")
   {
     service_ = this->create_service<AddTwoInts>(
       "add_two_ints", std::bind(&MinimalServer::handle_service, this, _1, _2, _3));
